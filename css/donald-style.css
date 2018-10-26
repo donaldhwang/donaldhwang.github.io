@@ -143,6 +143,47 @@ h4 {
 	margin-left: auto;
 }
 
+.site-title {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-left: 1rem;
+  color: #656565;
+  letter-spacing: 1px;
+}
+
+.nav-item {
+  margin-right: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.dropdown-item {
+  padding: 15px 20px;
+}
+
+.navbar {
+  height: 80px;
+  padding-left: 20px;
+  padding-right: 20px;	
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #656565;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav a:hover {
+  background-color: #e6e6e6;
+}
+
 
 @media screen and (max-width: 991px) {
 	.img-container {

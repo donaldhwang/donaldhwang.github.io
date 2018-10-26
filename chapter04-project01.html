@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+            <title>Chapter 4</title>
+            <link rel="stylesheet" href="css/reset-ch2.css" />
+            <link rel="stylesheet" href="css/chapter04-project01.css" />
+    </head>
+	
+    <body>
+        <table>
+            <caption>November 2018</caption>
+            
+            <thead>
+                <tr>
+                    <th title="Sunday">S</th>    
+					<th title="Monday">M</th>
+                    <th title="Tuesday">T</th>
+                    <th title="Wednesday">W</th>
+                    <th title="Thursday">T</th>
+                    <th title="Friday">F</th>
+                    <th title="Saturday">S</th>
+                </tr>
+            </thead>
+            
+            <tfoot>
+                <tr>
+                    <td colspan="3" id="preview_Month"><a href="#" title="">&laquo; Oct</a></td>
+                    <td class="pa">&nbsp;</td>
+                    <td colspan="3" id="next_Month"><a href="#" title="">Dce &raquo;</a></td>
+                </tr>
+            </tfoot>
+            
+            <tbody>
+                <tr>
+                    <td colspan="4" class="pa">&nbsp;</td>
+					<td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td><a href="#" title="">4</a></td>
+					<td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td><a href="#" title="">11</a></td>
+					<td>12</td>
+                    <td id="day">13</td>
+					<td>14</td>
+					<td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td><a href="#" title="">18</a></td><td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td><a href="#" title="">25</a></td>
+					<td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+					<td>29</td>
+                    <td>30</td>
+                    <td colspan="1" class="pa">&nbsp;</td>
+                </tr>
+            </tbody>
+            
+        </table>
+        
+        <div id="box">
+            <form method="get" action="http://www.randyconnolly.com/tests/process.php">
+                <fieldset>
+                    <legend>Meeting Details</legend>
+                    
+                    <p><label>Client Name: </label>
+                    <input type="text" name="client" placeholder="Enter name"/></p>
+					
+                    <p><label>First Meeting? </label> <input type="checkbox" name="first"  /></p>
+                    
+                    <p><label>Client Type: </label>
+                    <input type="radio" name="type" value="School">School
+                    <input type="radio" name="type" value="College">College
+                    <input type="radio" name="type" value="University">University
+                    </p>
+                                
+                    <p><label>Meeting Date:</label>
+                    <input type="date" name="date"></p>           
+                    <input type="submit" text="Add Meeting">
+                                        
+            	</fieldset>  
+            </form>
+            
+        </div>
+        
+    </body>
+</html>

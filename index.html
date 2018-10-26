@@ -6,13 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!--icon and name-->
-
   <title>Donald Hwang</title>
-  
   <link rel="icon" href="img/web_icon.ico"/>
       
   <!--font-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">  
   <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">    
   
   <!--bootstrap-->
@@ -37,12 +35,69 @@
         <![endif]-->
       </head>
 
-      <body>
+<body>
+
+	<div class="" id="Navigation">
+		 <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+                        <a class="navbar-brand" href="#">
+                            <i class="fas fa-3x fa-tachometer-alt tm-site-icon"></i>
+                            <h1 class="site-title mb-0">Donald Hwang</h1>
+                        </a>
+                        <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#section-2">Introduction</a> 
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        HW Ch2-3
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                        <a class="dropdown-item" href="chapter02-project01.html">Project 1</a>
+                                        <a class="dropdown-item" href="chapter02-project02.html">Project 2</a>
+                                        <a class="dropdown-item" href="chapter02-project03.html">Project 3</a>
+                                    </div>
+                                </li>
+								
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+									aria-haspopip="true" aria-expanded="false">
+									   HW CH4-5
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+										<a class="dropdown-item" href="chapter04-project01.html">CH4 Project 1</a>
+										<a class="dropdown-item" href="chapter05-project01.html">CH5 Project 1</a>
+										<a class="dropdown-item" href="chapter05-project02.html">CH5 Project 2</a>
+									</div>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        HW Ch6
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                        <a class="dropdown-item" href="chapter06-project01.html">Project 1</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                   </nav>
+            </div>
+		</div>
+	</div>
+
+	
         <div id="section-1" class="parallax-window" data-parallax="scroll" data-image-src="img/bg-img-01.jpg">
           <section class="container page-1-content ">
             <div class="row">
               <div class="col-md-6 ml-auto text-white">
-                <header><h1>Donald Hwang</h1></header>
+                <header><h1>About Myself</h1></header>
                 <p class="first_para">Majoring in computer science and technology at Jinan University, electronic music enthusiasts, fitness fanatics. In the future, hope to engage in the combination of machine learning and electronic dance music, without losing professionalism and fun. Will continue on the long road...</p>
                 
                   <a href="#section-2" class="btn btn-danger">Explore...</a>
@@ -135,6 +190,7 @@
           <!-- Magnific Popup core JS file -->
           <script src="js/jquery.magnific-popup.min.js"></script>
           
+		  <script src="js/bootstrap.min.js"></script>
 
           <script>
 
@@ -182,4 +238,4 @@
 
           </script>
         </body>
-        </html>
+</html>

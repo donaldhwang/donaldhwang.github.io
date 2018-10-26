@@ -1,0 +1,81 @@
+body {
+    font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+    font-size: 100%;
+}
+
+table {
+    margin: 2em auto;
+    color: #666;
+    font-size: 0.85em;
+}
+
+table caption{
+	background-color: aquamarine;
+	color: black;
+	text-align: center;
+	font-size: 1em;
+	padding: 0.5em 0 0.5em 0;
+}
+
+table a{
+    color: #467b52;
+}
+
+table th{
+	font-size: 0.65em;
+    background: #F2F2F2;
+    padding: 0.250em 0;
+    color: #666;
+	border-bottom: 1px solid #bbbbbb;
+}
+
+table td{
+	font-size: 0.65em;
+	font-weight: bold;
+	background: #F2F2F2;
+    padding: 0.625em 0.625em;
+    color: #666;
+	border-bottom: 1px solid #bbbbbb;
+}
+
+table tfoot td#preview_Month {
+    text-align: left;
+}
+table tfoot td#next_Month {
+    text-align: right;
+}
+
+tbody {
+    color: #666;
+    background: #ededed;
+    text-shadow: 0 0.050em 0 rgba(255,255,255,0.5);
+    padding: 0.500em;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid;
+    border-color: #fff #bbbbbb #bbbbbb #fff;
+    
+}
+
+tfoot {
+	padding: 0.625em 0.625em;
+}
+
+#box {
+    margin-top: 2em;
+    margin-right: auto;
+    margin-bottom: 0em;
+    margin-left: auto;
+    background-color: #D9C872;
+    width: 50%;
+    padding: 0.5em;
+}
+#box p {
+    margin: 0.5em;
+}
+
+#day{
+    color: #fff;
+    border: 1px solid #467b89;
+    background: #6eafbf;
+}
