@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>百度天气</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/weather.css" />
+</head>
+
+<body>
+    <h1>天气预报系统</h1>
+
+    <div id="bar">
+    <form action="" onsubmit="return false;" id="input" >
+        <div class="input-group input-group-lg">
+            <input class="form-control" type="text" name="" id="city" placeholder="请输入城市···" />
+            <span class="input-group-btn"><input class="btn btn-default" type="submit" value="搜索" id="search" /></span>
+        </div>
+    </form>
+    </div>
+
+    <div id="weather">
+        <p style="color: whitesmoke">时间：{{ weatherData.date }}</p>
+        <p style="color: whitesmoke">是否成功：{{ weatherData.status }}</p>
+
+        <div v-for="(item) in weatherData.results">
+
+            <p style="color: whitesmoke">当前地区：{{ item.currentCity }}</p>
+            <ul v-for="(item,index) in item.weather_data" v-if="index==0" id="today">
+                <li >{{ item.date }}</li>
+                <li>
+                    <img v-bind:src="item.dayPictureUrl" alt="">
+                </li>
+                <li>温度：{{ item.temperature }}</li>
+                <li>天气：{{ item.weather }}</li>
+                <li>风力：{{ item.wind }}</li>
+            </ul>
+
+            <ul v-for="(item) in item.index" id="advice">
+                <li>{{ item.tipt }}: {{ item.zs}}</li>
+                <li>建议：{{ item.des }}</li>
+            </ul>
+
+            <p id="future"> 未来天气 :</p>
+
+            <div class="other">
+                <ul v-for="(item,index) in item.weather_data" v-if="index==1" >
+                    <li class="date">{{ item.date }} <img v-bind:src="item.dayPictureUrl" alt=""></li>
+                    <li>温度：{{ item.temperature }}</li>
+                    <li>天气：{{ item.weather }}</li>
+                    <li>风力：{{ item.wind }}</li>
+                </ul>
+            </div>
+
+            <div class="other">
+                <ul v-for="(item,index) in item.weather_data" v-if="index==2" >
+                    <li class="date">{{ item.date }} <img v-bind:src="item.dayPictureUrl" alt=""></li>
+                    <li>温度：{{ item.temperature }}</li>
+                    <li>天气：{{ item.weather }}</li>
+                    <li>风力：{{ item.wind }}</li>
+                </ul>
+            </div>
+
+            <div class="other">
+                <ul v-for="(item,index) in item.weather_data" v-if="index==3" >
+                    <li class="date">{{ item.date }} <img v-bind:src="item.dayPictureUrl" alt=""></li>
+                    <li>温度：{{ item.temperature }}</li>
+                    <li>天气：{{ item.weather }}</li>
+                    <li>风力：{{ item.wind }}</li>
+                </ul>
+            </div>
+            <p>PM2.5:{{ item.pm25 }}</p>
+
+        </div>
+
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script type="text/javascript" src="js/weather.js"></script>
+</body>
+</html>
