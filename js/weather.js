@@ -30,7 +30,7 @@ function cityWeather(city) {
           data: {
               location: city, // 城市
               output: "json", // 格式
-              ak: "C1GP2PeLdZRtNyLr7b1LBsQpO2VstMPC" // 百度地图ak
+              ak: "ohA7QHfg0BBrpiY4kyuIAAsD" // 百度地图ak
           },
 
           success: function (data) {
