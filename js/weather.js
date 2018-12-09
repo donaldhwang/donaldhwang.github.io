@@ -23,7 +23,7 @@ function cityWeather(city) {
 
           type: "POST",//默认是GET
 
-          url: "http://api.map.baidu.com/telematics/v3/weather",
+          url: "https://api.map.baidu.com/telematics/v3/weather",
 
           dataType: "jsonp",
 
